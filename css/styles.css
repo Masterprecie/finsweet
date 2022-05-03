@@ -102,12 +102,12 @@
 /* Get your vehicle */
 
 .vehicle{
-    width: 80%;
-    margin-top: 50px;
+    /* width: 80%; */
+    padding: 50px 0;
     margin: auto;
 }
 .left-section{
-    flex-basis: 40%;
+    flex-basis: 45%;
 }
 .left-section h1{
     margin-top: 50px;
@@ -144,15 +144,13 @@ a{
     text-decoration: none;
 }
 .right-section{
-    flex-basis: 40%;
+    background-image: url(../img/Header.png);
+    /* height: 100vh; */
+    background-position: center;
     background-size: cover;
+    width: 50%;
 }
-.right-section img{
-    width: 100%;
-    margin-top: 50px;
-    /* height: 100vh;
-    width: 50vw; */
-}
+
 @media (max-width:700px) {
     .left-section {
         text-align: center;
@@ -165,16 +163,15 @@ a{
     .flex-property{
         flex-direction: column;
     }
-    .right-section img{
-        width: 100%;
-    }    
+       
 }
 
 /* third-section */
-.third-section{
+
+.third-section {
     width: 100%;
     background: #E2E6E9;
-    margin-top: 50px;
+    padding-top: 50px;
     padding-bottom: 70px;
 }
 .taking{
@@ -229,7 +226,7 @@ p{
     width: 100%;
     margin-bottom:10px;
     border-radius: 5px;
-    border: none;
+    border: 0 solid #ccc;
 }
 @media (max-width:700px) {
     .taking h2 {
@@ -375,6 +372,10 @@ a{
         /* height: 30%; */
         width: 100%;
     }
+    .offer h2{
+        font-size: 45px;
+        text-align: center;
+    }
 }
 
 /* sixth section */
@@ -385,11 +386,11 @@ a{
     padding: 50px 0;
 }
 .car{
- background-image: url(../img/car.png);
- background-position: left;
- background-size: cover;
- width: 20%;
- height: 50vh;
+    background-image: url(../img/car.png);
+    background-position: left;
+    background-size: cover;
+    width: 20%;
+    height: 50vh;
 }
 .engine{
     background-image: url(../img/engine.png);
@@ -406,8 +407,8 @@ a{
     padding: 50px;
 }
 .container h3{
-    font-size: 48px;
-    margin-bottom: 20px;
+    font-size: 30px;
+    margin-bottom: 10px;
     color: #fff;
 }
 .container a{
@@ -423,14 +424,17 @@ a{
     color: #661CE7;
     font-size: 40px;
 }
+ .experience .flex-property p{
+     margin: 0;
+ }
+
 @media (max-width:700px) {
     .sixth-section .flex-property{
         width: 100%;
     }
     .container, .engine, .car{
         width: 100%;
-        height: 100vh;
-    }
+        }
     .car{
         background-position: center;
     }
@@ -446,12 +450,201 @@ a{
 
 .seventh-section{
     width: 100%;
-    margin: 50px 0;
+    padding: 50px 0;
+}
+.brands{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+}
+.flex-property{
+    width: 80%;
+}
+ /* Eighth section */
+
+ .eighth-section{
+     width: 100%;
+     background: #F2F2F2;
+     /* margin: 50px 0; */
+     padding: 80px 0;
+ }
+ .customer{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+.review{
+    display: flex;
+    align-items: center;
+}
+.eighth-section .review .jonathan{
+    margin-left: 20px;
+}
+.review img{
+    width: 10%;
+    height: 10%;
+}
+.eighth-section .h5{
+    font-size: 20px;
+    line-height: 36px;
+    margin-top: 20px;
+    color: #1E1B1B;
+}
+
+.review-con{
+    background: #FFFFFF;
+    flex-basis: 49%;
+    padding: 50px;
+}
+
+/* .slides{
+    display: flex;
+    align-items: center;
+    width: 45%;
+    justify-content: space-between;
+    margin-left: 600px;
+    align-content: flex-end;
+    margin-top: 20px;
+} */
+
+@media (max-width:700px) {
+    .review-con{
+       margin-bottom: 10px;
+       width: 100%;
+    }
+    .customer h3{
+        text-align: center;
+        font-size: 40px;
+        width: 100%;
+    }    
+}
+
+
+/* ninth section */
+
+.ninth-section{
+    background: #E2E6E9;
+    width: 100%;
+    padding: 50px 0;
+}
+.freqently {
+    width: 50%;
+    margin: auto;
+    font-size: 40px;
+    font-weight: 700;
+    padding: 20px 0;
+    text-align: center;
+}
+.questions{
+    background: #fff;
+    padding: 20px;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.how h6{
+    font-size: 24px;
+    padding: 0;
+}
+.how{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.how p{
+    background:#FF6433;
+    padding: 5px 10px;
+    color: #fff;
+}
+
+@media (max-width:700px) {
+    .freqently {
+        text-align: center;
+        margin: auto;
+        width: 100%;
+    }
+    .questions{
+        width: 100%;
+    }
+    
+}
+
+/* tenth section */
+ .tenth-section{
+     padding: 50px 0;
+     background: #1E1B1B;
+     width: 100%;
+ }
+ .tenth-section .flex-property{
+    justify-content: left;
+ }
+ .tenth-section .get-touch h3{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    width: 50%;
+    padding: 20px 0;
+ }
+ .tenth-section .social-media{
+     color: #fff;
+ }
+ .fa-brands{
+     margin-right: 5px;
+     margin-top: 20px;
+ }
+ .tenth-section .help h4 {
+    color: #fff;
+    margin-top: 10px;
+ }
+.tenth-section .help{
+    padding: 30px 0;
+}
+@media (max-width:700px) {
+    .tenth-section .get-touch h3{
+        width: 100%;
+     }
+    
+}
+
+/* footer */
+ .footer{
+     background: #1E1B1B;
+     padding: 50px 0;
+ }
+ .footer .flex-property{
+     align-items: center;
+ }
+ .footer-link ul{
+     display: flex;
+     list-style: none;
+ }
+ .footer-link li{
+     margin-right: 10px;
+ }
+ .footer-link a{
+     color: #fff;
+     text-decoration: none;
+ }
+@media (max-width:700px) {
+    .footer-link ul{
+        flex-direction: column;
+        text-align: left;
+    }
+    .footer .flex-property{
+        align-items: flex-start;
+    }
 }
 
 
 
 
+
+
+ 
 
 
 
