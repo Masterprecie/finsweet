@@ -153,15 +153,19 @@ a{
 
 @media (max-width:700px) {
     .left-section {
-        text-align: center;
+        text-align: left;
         /* margin-bottom: 20px; */
     }
     .time{
-        text-align: center;
+        text-align: left;
         margin: auto;
     }
     .flex-property{
         flex-direction: column;
+    }
+    .left-section h1{
+        margin-top: 0px;
+        text-align: left;
     }
        
 }
@@ -238,6 +242,9 @@ p{
     }
     .flex .li-text{
         margin-left: 20px;
+    }
+    .third-section {
+        padding-top: 0px;       
     }
     
 }
