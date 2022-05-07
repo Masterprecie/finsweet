@@ -16,17 +16,16 @@
     <!-- header -->
 
     <section class="header">
-        <div class="flex-property">
+        <div class="nav-flex">
             <div class="finsweet-img"> 
                 <img src="img/finsweet.png">
             </div>
             <nav>             
                 <div class="nav-links" id="navLinks">
-                    <i class="fa-solid fa-xmark" onclick="hideMenu()" ></i>
                     <ul>
-                        <li><a href="">Home</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="">About Us</a></li>
-                        <li><a href="">Services</a></li>
+                        <li><a href="service.html">Services</a></li>
                         <li><a href="">Blog</a></li>
                         <li><a href="">Contact Us</a></li>
                     </ul>                   
@@ -41,7 +40,6 @@
                         <h6>1800 265 24 52</h6> 
                     </div>                   
                 </div>  
-                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
             </nav>
         </div>                   
     </section>
@@ -49,25 +47,31 @@
     <!-- Get you vehicle -->
 
     <section class="vehicle">
-        <div class="flex-property">
-            <div class="left-section">
-                <h1>Get your vehicle service done online at one place</h1>
-                <button type="button" class="btn" ><a href="">Book a service</a></button>
-                <div class="time">
-                    <div>
-                        <img src="img/time.png">
-                    </div>
-                    <div> 
-                        <p>We are open</p>
-                        <h6>Monday to Friday 9:00AM to 10:00AM</h6>
+        
+            <div class="flex-vehicle">
+                <div class="left-section">
+                    <h1>Get your vehicle service done online at one place</h1>
+                    <button type="button" class="btn"><a href="">Book a service</a></button>
+                    <div class="time">
+                        <div>
+                            <img src="img/time.png">                    
+                        </div>
+                        <div>
+                            <p>We are open</p>
+                            <h6>Monday to Friday 9:00AM to 10:00AM</h6>
+                        </div>
                     </div>
                 </div>
+                <div class="right-section">
+    
+    
+                </div>
             </div>
-            
-            <div class="right-section">
-                <!-- <img src="img/Header.png">                 -->
-            </div>
-        </div>
+        
+        
+        
+        
+
     </section>
 
     <!-- We are taking car -->
@@ -449,9 +453,9 @@
         </div>    
         <div class="footer-link">
             <ul>
-                <li><a href="">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="">About Us</a></li>
-                <li><a href="">Services</a></li>
+                <li><a href="service.html">Services</a></li>
                 <li><a href="">Blog</a></li>
                 <li><a href="">Contact Us</a></li>
             </ul>
@@ -464,35 +468,6 @@
 
     </div>
 </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <!-- ------Javascript for toggle menu------- -->
-      <script>
-        var navLinks = document.getElementById("navLinks");
-
-        function showMenu(){
-            navLinks.style.right="0";
-        }
-        function hideMenu(){
-            navLinks.style.right="-200px";
-        }
-        </script>
 
 
 </body>
